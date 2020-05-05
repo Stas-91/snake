@@ -64,6 +64,11 @@ namespace Snake
             sym = ' ';
             Draw();
         }
+        public void ClearFood()
+        {
+            sym = '*';
+            Draw();
+        }
 
         public override string ToString()
         {

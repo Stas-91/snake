@@ -32,6 +32,7 @@ namespace Snake
 				}
 				if (snake.Eat(food))
 				{
+					food.ClearFood();
 					food = foodCreator.CreateFood();
 					food.Draw();
 				}
@@ -49,7 +50,7 @@ namespace Snake
 			}
 			WriteGameOver();
 			Console.ReadLine();
-
+			
 		}
 		static void WriteGameOver()
 		{
